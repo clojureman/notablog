@@ -5,7 +5,7 @@ Two major limitations of AWS API Gateway are
 - 10MB response size
 - 30s timeout
 
-## A Work-Around Strategy  
+## A Work-Around Strategy (that Impacts Clients)
 A common work-around strategy is for the service to write the response to an S3 object and return a signed URL to the object.
 
 Although this works fine for large responses, it is not enough the solve the timeout problem. Additional measures are required.
@@ -23,7 +23,7 @@ Another, probably better, measure is to create some kind of internal state for r
 - Possible need for dealing with response states inside the service
 - The client needs to handle extra logic
 
-# Another Strategy
+# Another Strategy (that is Transparent to Clients)
 
 For the *occasional* "somewhat larger" and/or "somewhat slower" response there is another possible strategy, based on HTTP redirects. 
 It goes like this:
