@@ -40,7 +40,7 @@ It goes like this:
       - A series of 302-redirects is used, until a real result is ready or an appropriate status code can be returned
       - The last redirect could be a redirect to a signed URL, just as in case (2)
 
-To make implementation easier, the redirect URLs could carry all necessary information for keeping track of time and/or retries left, as well the signed URL itself.
+To make implementation easier, the redirect URLs could carry all necessary information for keeping track of time and/or retries left, as well some id for the S3 object itself.
 
 ### Pros
 - Easy to implement
