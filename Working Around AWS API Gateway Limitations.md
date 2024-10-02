@@ -1,5 +1,8 @@
 # Working Around AWS API Gateway Limitations
 
+> Do you want to see this text rewritten by AI? 
+> A mere 6GB neural network [did a better job than me](https://github.com/clojureman/notablog/blob/main/API%20GW%20limitations%20text%20rewritten%20by%20llama%203.2.md). Oh well...
+
 ## The Limitations
 Two major limitations of AWS API Gateway are
 - 10MB response size
